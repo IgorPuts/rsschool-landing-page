@@ -18,7 +18,6 @@ const headerHTML = `
     </div>
 `;
 
-// Код подвала
 const footerHTML = `
   <div class="wrapper">
     <div class="footer-container">
@@ -50,5 +49,5 @@ function injectPartials() {
     if (footerPlaceholder) footerPlaceholder.innerHTML = footerHTML;
 }
 
-// Вставляем при загрузке
+// Вставка при загрузке
 document.addEventListener('DOMContentLoaded', injectPartials);
