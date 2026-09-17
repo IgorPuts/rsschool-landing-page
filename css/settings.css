@@ -31,12 +31,3 @@
   --font-family: "Inter", sans-serif;
   --second-family: "Manrope", sans-serif;
 }
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-family: var(--font-family);
-  font-size: 1.6rem;
-}
