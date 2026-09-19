@@ -26,3 +26,76 @@
   font-weight: 600;
   border: none;
 }
+
+/* favorite-coffee section */
+.slider {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 480px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 40px;
+  padding: 0 4px 0 4px;
+}
+
+.slider__button {
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--border-inverse);
+  background-color: transparent;
+}
+
+.slider-img {
+  width: 480px;
+  height: 480px;
+
+}
+
+.slider-img img {
+  height: auto;
+  object-fit: cover;
+}
+
+.slide-description {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  align-content: center;
+}
+
+.slide-description p {
+  text-align: center;
+  letter-spacing: 0.05rem;
+}
+
+.slider-pagination {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.slider-line {
+  width: 40px;
+  height: 4px;
+  border: none;
+  padding: 0;
+  border-radius: 2px;
+  background-color: var(--border-primary); /* неактивный цвет светло-бежевый */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.slider-line:nth-child(1) {
+  background-color: var(--border-inverse);
+}
