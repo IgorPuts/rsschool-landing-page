@@ -99,3 +99,51 @@
 .slider-line:nth-child(1) {
   background-color: var(--border-inverse);
 }
+
+/* about section */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.about-flex__left,
+.about-flex__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-flex__left div,
+.about-flex__right div {
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 660px;
+}
+
+.about-flex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.about-1 {
+  max-height: 590px;
+}
+.about-2 {
+  max-height: 430px;
+}
+.about-3 {
+  max-height: 430px;
+}
+.about-4 {
+  max-height: 590px;
+}
