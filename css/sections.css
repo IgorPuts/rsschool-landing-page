@@ -1,0 +1,28 @@
+/* hero section */
+
+.wrapper__background {
+  width: 100%;
+  height: auto;
+  background-image: url("../assets/img/img-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px;
+  border-radius: 40px;
+}
+
+.hero__offer {
+  max-width: 530px;
+  max-height: 444px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.button-menu {
+  background-color: var(--background-page);
+  align-content: center;
+  font: inherit;
+  font-weight: 600;
+  border: none;
+}
