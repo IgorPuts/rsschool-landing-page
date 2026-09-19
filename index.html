@@ -15,13 +15,13 @@
 </head>
 <body class="body">
   <header class="header" id="header-placeholder">
-        <div class="wrapper">
+    <div class="wrapper">
       <div class="header__menu">
         <div class="header__logo">
           <img src="./assets/svg/logo-light.svg" alt="logo">
         </div>
         <nav class="nav">
-          <ul class="nav-list">
+          <ul class="nav-list action-link">
             <li class="nav-item"><a href="gifts.html" class="nav-link">Favorite coffee</a></li>
             <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
             <li class="nav-item"><a href="#best" class="nav-link">Mobile app</a></li>
@@ -44,7 +44,7 @@
           </button>
 
           <a href="menu.html" class="menu-link">
-            <span>Menu</span>
+            <span class="action-link">Menu</span>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.166 9.76667V11.6667C14.166 14.8883 11.5543 17.5 8.33268 17.5C5.11102 17.5 2.49935 14.8883 2.49935 11.6667V9.76667C2.49935 9.4353 2.76798 9.16667 3.09935 9.16667H13.566C13.8974 9.16667 14.166 9.4353 14.166 9.76667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M9.99935 7.49996C9.99935 6.66663 10.5946 5.83329 11.7851 5.83329C13.1 5.83329 14.166 4.7673 14.166 3.45234V2.91663" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -60,12 +60,12 @@
   <main class="main">
 
     <section class="hero">
-      <div class="wrapper"></div>
-      <div class="offer">
-        <h1><span class="all-layuots-text">Enjoy</span> <span class="for-dark-layouts-text">premium coffee at our charming cafe</span></h1>
-        <p class="for-dark-layouts-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-        <button class="button button-menu" type="button" href="#" ></button>
-      </div>
+      <div class="wrapper">
+        <div class="offer">
+          <h1><span class="all-layuots-text">Enjoy</span> <span class="for-dark-layouts-text">premium coffee at our charming cafe</span></h1>
+          <p class="for-dark-layouts-text">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+          <button class="button button-menu action-link" type="button" href="#"></button>
+        </div>
       </div>
     </section>
 
@@ -102,8 +102,16 @@
         <div class="offer">
           <h2><span class="all-layuots-text">Download</span> our app to start ordering</h2>
           <p>Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
-          <button class="button button-app-store" type="button" href="#" ></button>
-          <button class="button button-google-play" type="button" href="#" ></button>
+          <button class="button button-app-store" type="button" href="#" >
+            <svg></svg>
+            <span class="action-link"></span>
+            <span class="caption-link"></span>
+          </button>
+          <button class="button button-google-play" type="button" href="#">
+            <svg></svg>
+            <span class="action-link"></span>
+            <span class="caption-link"></span>
+          </button>
         </div>
         <div class="mobile-apps_image"></div>
       </div>

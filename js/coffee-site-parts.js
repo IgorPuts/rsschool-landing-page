@@ -28,9 +28,9 @@ const footerHTML = `
       <div class="contact-us">
         <h3>Contact us</h3>
         <div class="links">
-          <a></a>
-          <a></a>
-          <a></a>
+          <a class="action-link"></a>
+          <a class="action-link"></a>
+          <a class="action-link"></a>
         </div>
       </div>
     </div>
