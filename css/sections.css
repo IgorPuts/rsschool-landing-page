@@ -75,7 +75,6 @@
 
 .slide-description p {
   text-align: center;
-  letter-spacing: 0.05rem;
 }
 
 .slider-pagination {
@@ -147,3 +146,62 @@
 .about-4 {
   max-height: 590px;
 }
+
+/* mobile-apps section */
+
+.mobile-apps__container {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-apps__offer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 630px;
+  /* max-height: 342px; */
+}
+
+.mobile-apps__buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-apps_image {
+  max-width: 630px;
+}
+
+.mobile-apps_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.store-btn,
+.android-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid var(--border-inverse);
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 100px;
+  width: 200px;
+  height: 64px;
+}
+
+.store-btn > svg {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.store-btn__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
