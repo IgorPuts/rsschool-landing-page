@@ -3,3 +3,7 @@
   max-width: var(--content-width);
 
 }
+
+section {
+  margin-bottom: 100px;
+}
