@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: 'inter-regular', sans-serif;
+  font-family: 'inter-regular',"Manrope", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%;
@@ -100,4 +100,8 @@ p {
 
 .text-center {
   text-align: center;
+}
+
+.text-color-inverse {
+  color: var(--text-inverse);
 }

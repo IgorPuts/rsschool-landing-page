@@ -41,7 +41,6 @@
   display: inline-flex;
   flex-direction: column;
   gap: 16px;
-  color: var(--text-inverse);
 }
 
 .footer-link {
@@ -49,3 +48,4 @@
   gap: 8px;
   align-items: center;
 }
+

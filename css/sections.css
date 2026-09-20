@@ -131,7 +131,12 @@
   height: 100%;
   object-fit: cover;
   transform: scale(1.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
+}
+
+:is(.about-1, .about-2, .about-3, .about-4):hover img {
+  transform: scale(1);
+  transition: transform 0.8s ease;
 }
 
 .about-1 {
