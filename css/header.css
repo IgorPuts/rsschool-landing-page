@@ -29,13 +29,26 @@ header {
 }
 
 .menu-link {
+  position: relative;;
   display: inline-flex;
   justify-content: space-between;
   align-items:stretch;
   gap: 8px;
 }
 
+.underline {
+  position: relative;
+}
 
+.underline::before {
+  content: '';
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  bottom: -2px;
+  left: -2px;
+  background-color: var(--text-primary);
+}
 
 .theme-toggle {
   position: relative;
