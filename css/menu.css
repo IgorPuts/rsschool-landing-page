@@ -57,10 +57,11 @@
 
 .menu-carts {
   display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
   gap: 40px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
 }
+
 
 .cart__preview {
   display: flex;
