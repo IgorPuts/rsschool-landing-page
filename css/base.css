@@ -58,7 +58,7 @@ h2 {
   letter-spacing: 0.01rem;
 }
 
-h3, .price {
+h3, .cart__price {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;

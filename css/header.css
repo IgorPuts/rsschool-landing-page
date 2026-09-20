@@ -4,7 +4,6 @@ header {
   margin-bottom: 20px;
 }
 
-
 .header__menu {
   max-width: 100%;
   display: flex;
@@ -15,6 +14,7 @@ header {
 .nav {
   margin-right: 45px;
 }
+
 .nav-list {
   display: flex;
   align-items: center;
@@ -34,16 +34,6 @@ header {
   align-items:stretch;
   gap: 8px;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -72,5 +62,9 @@ header {
   border-radius: 50%;
   background: var(--text-accent);
   transition: transform 0.3s ease;
-  z-index: -1;
+  z-index: 0;
+}
+
+.theme-toggle__icon {
+  z-index: 2;
 }
