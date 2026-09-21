@@ -40,6 +40,8 @@
   border: 1px solid var(--border-primary);
   background-color: transparent;
   color: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 1s ease;
 }
 
 .tab::before {
@@ -51,9 +53,22 @@
   height: 30px;
   border-radius: 50%;
   background: var(--border-primary);
-  transition: transform 0.3s ease;
+  transition: background 0.8s ease;
   z-index: 0;
 }
+
+.active-tab {
+  background: var(--background-container);
+  color: var(--text-inverse);
+  cursor: default;
+  /* transition: background 1s ease; */
+}
+
+.active-tab::before {
+  background: var(--background-page);
+  /* transition: background 0.8s ease; */
+}
+
 
 .menu-carts {
   display: grid;
