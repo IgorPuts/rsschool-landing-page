@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
               <h3>${item.name}</h3>
               <p>${item.description}</p>
             </div>
-            <p class="cart__price">${item.price}</p>
+            <p class="cart__price">$${item.price}</p>
           </div>
         </div>
       `;

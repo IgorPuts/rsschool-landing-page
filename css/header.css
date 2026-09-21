@@ -11,21 +11,22 @@ header {
   align-items: center;
 }
 
-.nav {
-  margin-right: 45px;
-}
-
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 40px;
+}
+
+.nav-link {
+  padding: 10px;
 }
 
 .header__actions {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
+  margin-right: 1vh;
 }
 
 .menu-link {
@@ -34,6 +35,24 @@ header {
   justify-content: space-between;
   align-items:stretch;
   gap: 8px;
+}
+
+.menu-link svg {
+   flex-shrink: 0;
+}
+.menu-link::after {
+  content: '';
+  position: absolute;
+  width: 72px;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.menu-link:hover::after {
+  background-color: var(--text-primary);
 }
 
 .underline {
@@ -46,7 +65,7 @@ header {
   width: 72px;
   height: 2px;
   bottom: -2px;
-  left: -2px;
+  left: 0;
   background-color: var(--text-primary);
 }
 
@@ -74,10 +93,119 @@ header {
   height: 36px;
   border-radius: 50%;
   background: var(--text-accent);
-  transition: transform 0.3s ease;
+  transition: all 0.5s ease;
   z-index: 0;
 }
 
 .theme-toggle__icon {
   z-index: 2;
+}
+
+/* .theme-toggle:hover::before {
+  top: 2px;
+  left: 45px;
+  background: var(--dark-border-primary);
+} */
+
+.theme-toggle__icon-sun {
+  color: var(--text-inverse);
+  transition: all 0.5s ease;
+}
+.theme-toggle__icon-moon {
+  color: var(--text-primary);
+  transition: all 0.5s ease;
+}
+
+.theme-toggle:hover .theme-toggle__icon-moon {
+  color: var(--text-inverse);
+}
+
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 45px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.theme-toggle:hover::after {
+  background: var(--dark-border-primary);
+}
+
+.header-burger {
+  display: none;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+}
+
+.burger-line {
+  display: block;  /*span строчный элемент накидываем ему блок, чтобы корректно стилизовать */
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: var(--text-primary);
+  left: 0;
+}
+
+.first-line {
+  top: 15px;
+  left: 10px;
+}
+
+.second-line {
+  bottom: 15px;
+  left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .theme-toggle {
+    position: relative;
+    width: 104px;
+    height: 52px;
+    border-radius: 28px;
+    gap: 8px;
+    background: transparent;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 12px 0 9px;
+  }
+  .theme-toggle::before {
+    top: 5px;
+    left: 2px;
+    width: 40px;
+    height: 40px;
+  }
+  .theme-toggle::after {
+    top: 5px;
+    left: 58px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-burger {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .menu-link {
+    display: none;
+  }
+}
+
+
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    max-width: var(--mobile-width);
+  }
 }

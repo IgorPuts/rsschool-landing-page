@@ -13,19 +13,49 @@
 
 .hero__offer {
   max-width: 530px;
-  max-height: 444px;
   display: flex;
   gap: 40px;
   flex-direction: column;
 }
 
-.button-menu {
+.button.button-menu {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: stretch;
   background-color: var(--background-page);
-  align-content: center;
   font: inherit;
   font-weight: 600;
   border: none;
+  justify-content: center;
+  padding: 22px 40px 18px 50px;
+  gap: 8px;
 }
+
+.button-menu__inner-svg {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.button.button-menu:hover .button-menu__inner-svg {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper__background {
+    padding: 100px 60px;
+  }
+  .button-menu__inner-svg {
+    opacity: 1;
+}
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper__background {
+    padding: 60px 16px;
+  }
+}
+
 
 /* favorite-coffee section */
 .slider {
@@ -48,16 +78,24 @@
 .slider__button {
   width: 60px;
   height: 60px;
-  padding: 18px;
+  padding: 16px;
   border-radius: 50%;
   border: 1px solid var(--border-inverse);
   background-color: transparent;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
+.slider__button:hover {
+  background-color: var(--background-container);
+}
+.slider__button:hover path{
+  stroke: var(--text-inverse);
+}
+
 
 .slider-img {
   width: 480px;
   height: 480px;
-
 }
 
 .slider-img img {
@@ -152,6 +190,42 @@
   max-height: 590px;
 }
 
+@media screen and (max-width: 768px) {
+  .about-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.about-2 {
+  display: none;
+}
+.about-3 {
+  display: none;
+}
+.about-flex__left,
+.about-flex__right {
+  display: flex;
+}
+
+.about-flex__left div,
+.about-flex__right div {
+  overflow: hidden;
+  border-radius: 20px;
+  max-width: 688px;
+}
+.about-flex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.7s ease;
+}
+}
+
+
+@media screen and (max-width: 380px) {
+
+}
 /* mobile-apps section */
 
 .mobile-apps__container {
@@ -172,6 +246,7 @@
 .mobile-apps__buttons {
   display: flex;
   gap: 20px;
+  cursor: pointer;
 }
 
 .mobile-apps_image {
@@ -198,6 +273,13 @@
   height: 64px;
 }
 
+.store-btn:hover,
+.android-btn:hover {
+  background-color: var(--background-container);
+  color: var(--text-inverse);
+}
+
+
 .store-btn > svg {
   flex-shrink: 0;
   width: 36px;
@@ -210,3 +292,20 @@
   line-height: 1.2;
 }
 
+@media screen and (max-width: 768px) {
+  .mobile-apps__container {
+    display: flex;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile-apps__offer {
+  gap: 40px;
+  max-width: 688px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+
+}

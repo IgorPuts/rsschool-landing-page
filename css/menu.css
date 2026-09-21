@@ -41,7 +41,7 @@
   background-color: transparent;
   color: var(--text-primary);
   cursor: pointer;
-  transition: background-color 1s ease;
+  transition: background-color 0.5s ease;
 }
 
 .tab::before {
@@ -53,7 +53,7 @@
   height: 30px;
   border-radius: 50%;
   background: var(--border-primary);
-  transition: background 0.8s ease;
+  transition: background 0.5s ease;
   z-index: 0;
 }
 
@@ -61,14 +61,19 @@
   background: var(--background-container);
   color: var(--text-inverse);
   cursor: default;
-  /* transition: background 1s ease; */
 }
 
 .active-tab::before {
   background: var(--background-page);
-  /* transition: background 0.8s ease; */
 }
 
+.tab:hover {
+  background: var(--background-container);
+  color: var(--text-inverse);
+}
+.tab:hover::before {
+  background: var(--background-page);
+}
 
 .menu-carts {
   display: grid;
@@ -77,7 +82,6 @@
   justify-content: center;
 }
 
-
 .cart__preview {
   display: flex;
   flex-direction: column;
@@ -85,6 +89,20 @@
   height: 506px;
   border: 1px solid var(--border-primary);
   border-radius: 40px;
+  transition: all 1s ease;
+}
+
+.cart__preview {
+  opacity: 0.4;
+  transform: translateY(10px);
+  animation: cartAppear 1s ease forwards;
+}
+
+@keyframes cartAppear {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 .cart__img {
@@ -108,15 +126,23 @@
   transition: transform 0.8s ease;
 }
 
+
+
 .cart__title {
   display: flex;
   padding: 20px;
   gap: 12px;
   flex-direction: column;
+  flex: 1;
 }
 
 .cart-description {
   display: flex;
   gap: 12px;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-description p {
+  min-height: 72px;
 }
