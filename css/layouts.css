@@ -1,0 +1,20 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: var(--content-width);
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: var(--tablet-width);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .wrapper {
+    max-width: var(--mobile-width);
+  }
+}
