@@ -27,6 +27,7 @@
   align-items: center;
   gap: 16px;
 }
+
 .tab {
   position: relative;
   display: inline-flex;
@@ -71,6 +72,7 @@
   background: var(--background-container);
   color: var(--text-inverse);
 }
+
 .tab:hover::before {
   background: var(--background-page);
 }
@@ -125,8 +127,6 @@
   transform: scale(1);
   transition: transform 0.8s ease;
 }
-
-
 
 .cart__title {
   display: flex;
