@@ -33,9 +33,9 @@
 }
 
 .link-social:hover {
-  background-color: var(--text-inverse);
+  background-color: var(--background-page);
   color: var(--text-primary);
-  border: 1px solid var(--text-inverse);
+  border: 1px solid var(--border-inverse);
 }
 
 .contact-us {
