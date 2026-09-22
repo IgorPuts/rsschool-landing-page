@@ -106,6 +106,8 @@
 }
 
 .slider__button {
+  flex-shrink: 0;
+  min-width: max-content;
   width: 60px;
   height: 60px;
   padding: 16px;
@@ -115,6 +117,12 @@
   transition: all 0.5s ease;
   cursor: pointer;
   color: var(--text-primary);
+}
+
+.slider__button svg {
+   flex-shrink: 0;
+  width: 28px;
+  height: 28px;
 }
 
 /* .slider__button svg {
