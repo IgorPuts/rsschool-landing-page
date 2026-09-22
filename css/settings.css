@@ -1,5 +1,5 @@
 :root {
-  /*Light colors*/
+/*.light-style*/
 
   --text-primary: #403f3d;
   --text-inverse: #e1d4c9;
@@ -11,8 +11,8 @@
   --border-inverse: #665f55;
 
 
-  /*Dark colors*/
 
+/*.dark-style*/
   --dark-text-primary: #e1d4c9;
   --dark-text-inverse: var(--dark-text-primary);
   --dark-text-accent: #b0907a;
@@ -26,7 +26,21 @@
   --dark-bg-modal: var(--dark-bg-container);
   --dark-bg-modal-control: var(--dark-bg-page);
 
+
   --content-width: 1360px;
   --tablet-width: 688px;
   --mobile-width: 348px;
 }
+
+  :root {
+  --text-primary: var(--dark-text-primary);
+  --text-inverse: var(--dark-text-inverse);
+  --text-accent: var(--dark-text-accent);
+  --background-page: var(--dark-bg-page);
+  --background-container: var(--dark-bg-container);
+  --background-overlay: var(--dark-bg-overlay);
+  --border-primary: var(--dark-border-primary);
+  --border-inverse: var(--dark-border-inverse);
+
+}
+
