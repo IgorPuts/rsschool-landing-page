@@ -82,7 +82,7 @@ header {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  padding: 0 3px 0 6px;
+  padding: 0 3px 0 3px;
 }
 
 .theme-toggle__icon-sun {

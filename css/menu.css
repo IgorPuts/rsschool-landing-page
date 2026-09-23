@@ -128,6 +128,7 @@
   border: 1px solid var(--border-primary);
   border-radius: 40px;
   transition: all 1s ease;
+  cursor: pointer;
 }
 
 .cart__preview {
@@ -189,3 +190,4 @@
   max-width: 100%;
   max-height: fit-content;
   }
+}
