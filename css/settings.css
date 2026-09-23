@@ -1,5 +1,5 @@
 :root {
-/*.light-style*/
+/*.light-style variables*/
 
   --text-primary: #403f3d;
   --text-inverse: #e1d4c9;
@@ -10,9 +10,8 @@
   --border-primary: #c1b6ad;
   --border-inverse: #665f55;
 
+/*.dark-style variables*/
 
-
-/*.dark-style*/
   --dark-text-primary: #e1d4c9;
   --dark-text-inverse: var(--dark-text-primary);
   --dark-text-accent: #b0907a;
@@ -26,15 +25,23 @@
   --dark-bg-modal: var(--dark-bg-container);
   --dark-bg-modal-control: var(--dark-bg-page);
 
-
+/*content-width start*/
   --content-width: 1360px;
   --tablet-width: 688px;
   --mobile-width: 348px;
+/*content-width end*/
 
+/*header button switch theme start*/
   --light-sun-color: var(--text-inverse);
-  --light-moon-color: var(--text-primary);
-  --light-moon-color-hovered: var(--text-inverse);
+  --light-sun-bg-color: var(--text-accent);
+  --light-sun-color-hovered: var(--light-sun-color);
+  --light-sun-bg-color-hovered: var(--light-sun-bg-color);
 
+  --light-moon-color: var(--text-primary);
+  --light-moon-bg-color: transparent;
+  --light-moon-color-hovered: var(--text-inverse);
+  --light-moon-bg-color-hovered: var(--dark-border-primary);
+/*header button switch theme end*/
 }
 
 .darkstyle {
@@ -47,163 +54,15 @@
   --border-primary: var(--dark-border-primary);
   --border-inverse: var(--dark-border-inverse);
 
+/*header button switch theme start*/
+  --light-sun-color: var(--dark-text-primary);
+  --light-sun-bg-color: transparent;
+  --light-sun-color-hovered: var(--dark-text-primary);
+  --light-sun-bg-color-hovered: var(--dark-bg-container);
+
+  --light-moon-color: var(--dark-text-inverse);
+  --light-moon-bg-color: var(--dark-text-accent);
+  --light-moon-color-hovered: var(--dark-text-inverse);
+  --light-moon-bg-color-hovered: var(--dark-text-accent);
+/*header button switch theme end*/
 }
-.dark-tm{}
-
-
-/*....................старт светлой темы*.................../
-
-.theme-toggle__icon-sun {
-  color: var(--light-sun-color);
-}
-
-
-/* .theme-toggle__icon-sun::before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--text-accent);
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-.theme-toggle__icon-sun::after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-} */
-
-/* .theme-toggle__icon-moon {
-  color: var(--light-moon-color);
-}
-
-.theme-toggle__icon-moon:hover {
-  color: var(--light-moon-color-hovered);
-} */
-
-/* .theme-toggle__icon-moon::before {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-.theme-toggle__icon-moon::after {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-  .theme-toggle:hover .theme-toggle__icon-moon::before {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--dark-border-primary);
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-
-/*...............конец светлой темы.................*/
-
-
-
-
-
-
-/*...............старт темной темы.................*/
-
-
-
-.theme-toggle__icon-sun.dark-tm::before {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-.theme-toggle__icon-sun.dark-tm::after {
-  content: '';
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-.theme-toggle:hover .theme-toggle__icon-sun.dark-tm::before {
-  background: var(--dark-bg-container);
-}
-.theme-toggle:hover .theme-toggle__icon-sun.dark-tm::after {
-  background: var(--dark-bg-container);
-}
-
-
-
-
-.theme-toggle__icon-sun.dark-tm {
-  color: var(--text-inverse);
-}
-.theme-toggle__icon-moon.dark-tm::before {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--dark-text-accent);
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-.theme-toggle__icon-moon.dark-tm::after {
-  content: '';
-  position: absolute;
-  top: -9px;
-  left: -10px;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: transparent;
-  transition: all 0.5s ease;
-  z-index: -1;
-}
-
-/*...............конец темной темы.................*/

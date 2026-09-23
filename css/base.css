@@ -45,9 +45,9 @@ a {
 
 h1 {
   font-style: normal;
-font-size: 72px;
-line-height: 105%;
-font-weight: 600;
+  font-size: 72px;
+  line-height: 105%;
+  font-weight: 600;
 }
 
 h2 {
@@ -102,6 +102,3 @@ p {
   text-align: center;
 }
 
-.text-color-inverse {
-  color: var(--text-inverse);
-}
