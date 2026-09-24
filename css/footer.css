@@ -74,10 +74,15 @@
   opacity: 1;
 }
 
+.footer-link.non-underline:hover::after{
+  opacity: 0;
+}
+
 .text-link {
   letter-spacing: 2%;
 }
 
+/*media area*/
 @media screen and (max-width: 768px) {
   .footer-container {
     display: flex;
@@ -90,4 +95,13 @@
   }
 }
 
-@media screen and (max-width: 380px) {}
+@media screen and (max-width: 552px) {
+    .footer-container {
+    display: flex;
+    padding: 60px 16px;
+    border-radius: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

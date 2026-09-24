@@ -1,6 +1,5 @@
 :root {
 /*.light-style variables*/
-
   --text-primary: #403f3d;
   --text-inverse: #e1d4c9;
   --text-accent: #b0907a;
@@ -11,7 +10,6 @@
   --border-inverse: #665f55;
 
 /*.dark-style variables*/
-
   --dark-text-primary: #e1d4c9;
   --dark-text-inverse: var(--dark-text-primary);
   --dark-text-accent: #b0907a;
@@ -26,9 +24,9 @@
   --dark-bg-modal-control: var(--dark-bg-page);
 
 /*content-width start*/
-  --content-width: 1360px;
-  --tablet-width: 688px;
-  --mobile-width: 348px;
+  --content-width: 1440px;
+  --tablet-width: 768px;
+  --mobile-width: 380px;
 /*content-width end*/
 
 /*header button switch theme start*/
