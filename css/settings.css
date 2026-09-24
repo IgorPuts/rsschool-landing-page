@@ -26,9 +26,9 @@
   --dark-bg-modal-control: var(--dark-bg-page);
 
 /*content-width start*/
-  --content-width: 1360px;
-  --tablet-width: 688px;
-  --mobile-width: 348px;
+  --content-width: 1440px;
+  --tablet-width: 768px;
+  --mobile-width: 380px;
 /*content-width end*/
 
 /*header button switch theme start*/

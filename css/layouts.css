@@ -1,6 +1,7 @@
 .wrapper {
   margin: 0 auto;
   max-width: var(--content-width);
+  padding: 0 40px;
 }
 
 section {
@@ -10,11 +11,12 @@ section {
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: var(--tablet-width);
+    padding: 0 5%;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 552px) {
   .wrapper {
-    max-width: var(--mobile-width);
+    padding: 0 16px;
   }
 }
