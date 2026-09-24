@@ -1,0 +1,66 @@
+:root {
+/*.light-style variables*/
+  --text-primary: #403f3d;
+  --text-inverse: #e1d4c9;
+  --text-accent: #b0907a;
+  --background-page: #e1d4c9;
+  --background-container: #665f55;
+  --background-overlay: rgba(64, 63, 61, 0.8);
+  --border-primary: #c1b6ad;
+  --border-inverse: #665f55;
+
+/*.dark-style variables*/
+  --dark-text-primary: #e1d4c9;
+  --dark-text-inverse: var(--dark-text-primary);
+  --dark-text-accent: #b0907a;
+  --dark-bg-page: #292826;
+  --dark-bg-container: #403f3d;
+  --dark-bg-overlay: rgba(41, 40, 38, 0.8);
+  --dark-border-primary: #665f55;
+  --dark-border-inverse: #c1b6ad;
+  --background-modal: #e1d4c9;
+  --background-modalcontrol: #665f55;
+  --dark-bg-modal: var(--dark-bg-container);
+  --dark-bg-modal-control: var(--dark-bg-page);
+
+/*content-width start*/
+  --content-width: 1440px;
+  --tablet-width: 768px;
+  --mobile-width: 380px;
+/*content-width end*/
+
+/*header button switch theme start*/
+  --light-sun-color: var(--text-inverse);
+  --light-sun-bg-color: var(--text-accent);
+  --light-sun-color-hovered: var(--light-sun-color);
+  --light-sun-bg-color-hovered: var(--light-sun-bg-color);
+
+  --light-moon-color: var(--text-primary);
+  --light-moon-bg-color: transparent;
+  --light-moon-color-hovered: var(--text-inverse);
+  --light-moon-bg-color-hovered: var(--dark-border-primary);
+/*header button switch theme end*/
+}
+
+.darkstyle {
+  --text-primary: var(--dark-text-primary);
+  --text-inverse: var(--dark-text-inverse);
+  --text-accent: var(--dark-text-accent);
+  --background-page: var(--dark-bg-page);
+  --background-container: var(--dark-bg-container);
+  --background-overlay: var(--dark-bg-overlay);
+  --border-primary: var(--dark-border-primary);
+  --border-inverse: var(--dark-border-inverse);
+
+/*header button switch theme start*/
+  --light-sun-color: var(--dark-text-primary);
+  --light-sun-bg-color: transparent;
+  --light-sun-color-hovered: var(--dark-text-primary);
+  --light-sun-bg-color-hovered: var(--dark-bg-container);
+
+  --light-moon-color: var(--dark-text-inverse);
+  --light-moon-bg-color: var(--dark-text-accent);
+  --light-moon-color-hovered: var(--dark-text-inverse);
+  --light-moon-bg-color-hovered: var(--dark-text-accent);
+/*header button switch theme end*/
+}
