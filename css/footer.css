@@ -51,7 +51,6 @@
   gap: 16px;
 }
 
-
 .footer-link {
   position: relative;
   display: inline-flex;
@@ -83,6 +82,7 @@
   letter-spacing: 2%;
 }
 
+/*media area*/
 @media screen and (max-width: 768px) {
   .footer-container {
     display: flex;

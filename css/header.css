@@ -3,6 +3,7 @@ header {
   height: 60px;
   margin-bottom: 20px;
 }
+
 .header__menu {
   max-width: 100%;
   display: flex;
@@ -60,14 +61,6 @@ header {
 
 .nav-link:hover::after {
   opacity: 1;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-item {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 125%;
-  }
 }
 
 .header__actions {
@@ -142,7 +135,7 @@ header {
   background-color: var(--light-sun-bg-color);
 }
 
-.theme-toggle:hover .theme-toggle__icon-sun{
+.theme-toggle:hover .theme-toggle__icon-sun {
   color: var(--light-sun-color-hovered);
   background-color: var(--light-sun-bg-color-hovered);
 }
@@ -155,7 +148,7 @@ header {
   background-color: var(--light-moon-bg-color);
 }
 
-.theme-toggle:hover .theme-toggle__icon-moon{
+.theme-toggle:hover .theme-toggle__icon-moon {
   color: var(--light-moon-color-hovered);
   background-color: var(--light-moon-bg-color-hovered);
 }
@@ -192,14 +185,24 @@ header {
   left: 10px;
 }
 
+/*media area*/
 @media screen and (max-width: 900px) {
   .nav-list {
     gap: clamp(5px, 1%, 40px);
   }
 }
 
-
 @media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .nav-item {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+  }
+
   .theme-toggle {
     width: 104px;
     height: 52px;
@@ -218,17 +221,12 @@ header {
     height: 26px;
   }
 
-
   .hide {
-    display: block;
-}
-
-  .header-burger {
     display: block;
   }
 
-  .nav {
-    display: none;
+  .header-burger {
+    display: block;
   }
 
   .menu-link {

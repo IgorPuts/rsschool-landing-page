@@ -1,6 +1,5 @@
 :root {
 /*.light-style variables*/
-
   --text-primary: #403f3d;
   --text-inverse: #e1d4c9;
   --text-accent: #b0907a;
@@ -11,7 +10,6 @@
   --border-inverse: #665f55;
 
 /*.dark-style variables*/
-
   --dark-text-primary: #e1d4c9;
   --dark-text-inverse: var(--dark-text-primary);
   --dark-text-accent: #b0907a;

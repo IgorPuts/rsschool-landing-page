@@ -50,7 +50,6 @@ h1 {
   font-weight: 600;
 }
 
-
 h2 {
   font-style: normal;
   font-weight: 600;
@@ -103,7 +102,7 @@ p {
   text-align: center;
 }
 
-
+/*media area*/
 @media screen and (max-width: 552px) {
     h1 {
     font-size: 42px;
