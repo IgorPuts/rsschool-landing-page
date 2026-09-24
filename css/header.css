@@ -41,10 +41,25 @@ header {
   gap: 48px;
 }
 
-
-
 .nav-link {
   padding: 5px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  width: 91%;
+  height: 2px;
+  transition: all 0.5s ease;
+  background-color: var(--text-primary);
+  opacity: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
