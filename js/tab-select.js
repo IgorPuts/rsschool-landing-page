@@ -91,10 +91,3 @@
 //   getCategoryTab();
 //   fillMenuCarts(theCurrentTab, coffeeCarts, teaCarts, dessertCarts);
 // });
-
-import { menuData } from './carts.js';
-let teaCarts = menuData.filter(item => item.category === 'tea');
-console.log('----------tea--------------');
-console.log(teaCarts);
-console.log('----------tea--------------');
-console.log(menuData);
