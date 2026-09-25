@@ -153,38 +153,6 @@ header {
   background-color: var(--light-moon-bg-color-hovered);
 }
 
-.hide {
-  display: none;
-}
-
-.header-burger {
-  display: none;
-  position: relative;
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--text-primary);
-  border-radius: 50%;
-}
-
-.burger-line {
-  display: block;  /*span строчный элемент накидываем ему блок, чтобы корректно стилизовать */
-  position: absolute;
-  width: 50%;
-  height: 2px;
-  background-color: var(--text-primary);
-  left: 0;
-}
-
-.first-line {
-  top: 15px;
-  left: 10px;
-}
-
-.second-line {
-  bottom: 15px;
-  left: 10px;
-}
-
 /*media area*/
 @media screen and (max-width: 900px) {
   .nav-list {

@@ -1,0 +1,242 @@
+/*бургер кнопка*/
+.burger-button {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background-color: inherit;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.burger-button:hover {
+  background-color:  var(--background-container);
+}
+
+.burger-button:hover .burger-line {
+  background-color: var(--text-inverse);
+}
+
+.burger-line {
+  transition: color 0.3s ease, transform 0.4s ease;
+  width: 18px;
+  height: 1.8px;
+  background-color: var(--text-primary);
+}
+
+/*/cross burger/*/
+  .burger-button.crossed-lines .first-line {
+   transform: rotate(+45deg) translate(3px, 4px);
+  }
+  .burger-button.crossed-lines .second-line {
+    transform: rotate(-45deg) translate(3px, -3px);
+  }
+/*/cross burger/*/
+
+.menu-link-copy {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-button {
+    display: inline-flex;
+  }
+
+  .nav.opened-burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    padding: 150px 40px;
+    background: var(--background-page);
+    z-index: 3;
+    /* transform: translateX(+100%); */
+    transition: 0.5s;
+    animation: menu 0.5s linear;
+    gap: 100px;
+  }
+
+  .nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+  @keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  .nav-link {
+  padding: 10px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 10px;
+  width: 91%;
+  height: 3px;
+  transition: all 0.5s ease;
+  background-color: var(--text-primary);
+  opacity: 0;
+}
+
+.nav-item:nth-child(1) {
+  margin-top: -48px;
+}
+
+.burger-chore {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+}
+
+.menu-link-copy {
+  position: relative;;
+  display: inline-flex;
+  justify-content: center;
+  align-items:stretch;
+  gap: 20px;
+}
+
+.menu-link-copy svg {
+   flex-shrink: 0;
+}
+
+.menu-link-copy::after {
+  content: '';
+  position: absolute;
+  width: 23%;
+  height: 3px;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.menu-link-copy:hover::after {
+  background-color: var(--text-primary);
+}
+
+}
+
+
+
+
+
+
+/*бургер кнопка*/
+/* блок гибкой настройки каждого элемента навигации справа*/
+
+
+/* .nav-list {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
+
+
+
+
+/*действия и анимации бергер-меню после нажатия на бургер при первом откртии*/
+
+
+  /* .burger-button {
+    display: block;
+    animation: burgerAppearence 0.5s ease;
+  }
+
+
+  @keyframes burgerAppearence {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+        transform: rotate(-90deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(0);
+    }
+  } */
+
+/*действия и анимации бергер-меню после нажатия на бургер при первом откртии*/
+
+
+
+
+
+/* //////burger menu nonactive//////*/
+
+  /* .nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 64px);
+    top: 64px;
+    left: 0;
+    background: #ffffff;
+    z-index: 5;
+    transform: translateX(+100%);
+    transition: 0.5s;
+    animation: menu 2s linear;
+  }
+  @keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  } */
+
+/*Активируем окно меню бургер*/
+
+  /* .nav-active {
+    transform: translateX(0);
+    transition: 1s all cubic-bezier(0, 0, 0.2, 1);
+  } */
+
+
+/* //////burger menu specifics//////*/
+
+
+  /* .nav-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+  }
+  .nav-item {
+    text-align: center;
+  }
+  .nav-link {
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+  } */
+
+
+
+   /* //////burger menu specifics//////*/

@@ -11,7 +11,7 @@ section {
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: var(--tablet-width);
-    padding: 0 5%;
+    padding: 0 3.5%;
   }
 }
 
