@@ -1,3 +1,8 @@
+.preload * {
+    transition: none !important;
+    animation: none !important;
+}
+
 html {
   font-size: 10px;
   box-sizing: border-box;
