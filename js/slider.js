@@ -65,10 +65,7 @@ function activeLine() {
 
 sliderLines.forEach((line, i) => {
   line.addEventListener('click', (e)=>{
-    if (!line) return;
-    if (e.target === line) {
-      count = i;
-    }
+    count = i;
     activeLine();
     rollSlider();
   });
