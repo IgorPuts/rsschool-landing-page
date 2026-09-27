@@ -57,19 +57,17 @@
   display: flex;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-width: 480px;
 }
 
 .slider-inner-content {
   display: flex;
   flex-direction: row;
-  gap: 200px;
   align-items: center;
-  justify-content: center;
   width: 100%;
+  transition: all 0.5s ease;
 }
-
 
 .slider__button {
   flex-shrink: 0;
@@ -83,6 +81,7 @@
   transition: all 0.5s ease;
   cursor: pointer;
   color: var(--text-primary);
+  z-index: 5;
 }
 
 .slider__button svg {
@@ -313,7 +312,10 @@
     align-items: center;
     justify-content: center;
   }
-      .slider-img {
+  .slider {
+    max-width: 348px;
+  }
+  .slider-img {
   min-width: 348px;
   }
 
