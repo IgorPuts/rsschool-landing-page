@@ -1,0 +1,120 @@
+.burger-button {
+  display: none;
+  width: 44px;
+  height: 44px;
+  background-color: inherit;
+  border: 1px solid var(--text-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  transition: background-color 0.5s ease;
+}
+
+.burger-button:hover {
+  background-color:  var(--background-container);
+}
+
+.burger-button:hover .burger-line {
+  background-color: var(--text-inverse);
+}
+
+.burger-line {
+  transition: color 0.3s ease, transform 0.4s ease;
+  width: 18px;
+  height: 1.8px;
+  background-color: var(--text-primary);
+}
+
+/*/cross burger/*/
+.burger-button.crossed-lines .first-line {
+  transform: rotate(+45deg) translate(3px, 4px);
+}
+.burger-button.crossed-lines .second-line {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+/*/cross burger/*/
+
+.menu-link-copy {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .burger-button {
+    display: inline-flex;
+  }
+
+  .nav.opened-burger-menu {
+    opacity: 1;
+    z-index: 3;
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+    transition: transform 0.8s ease, visibility 0s linear 0s;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .nav-link {
+    padding: 10px;
+    position: relative;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 10px;
+    width: 91%;
+    height: 3px;
+    transition: all 0.5s ease;
+    background-color: var(--text-primary);
+    opacity: 0;
+  }
+
+  .nav-item:nth-child(1) {
+    margin-top: -48px;
+  }
+
+  .burger-chore {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+  }
+
+  .menu-link-copy {
+      position: relative;;
+      display: inline-flex;
+      justify-content: center;
+      align-items:stretch;
+      gap: 20px;
+    }
+
+  .menu-link-copy svg {
+    flex-shrink: 0;
+  }
+
+  .menu-link-copy::after {
+    content: '';
+    position: absolute;
+    width: 23%;
+    height: 3px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+  }
+
+  .menu-link-copy:hover::after {
+    background-color: var(--text-primary);
+  }
+}

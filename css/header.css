@@ -144,45 +144,13 @@ header {
   color: var(--light-moon-color);
   transition: all 0.5s ease;
   border-radius: 50%;
-  padding: 7px;
+  padding: 8px;
   background-color: var(--light-moon-bg-color);
 }
 
 .theme-toggle:hover .theme-toggle__icon-moon {
   color: var(--light-moon-color-hovered);
   background-color: var(--light-moon-bg-color-hovered);
-}
-
-.hide {
-  display: none;
-}
-
-.header-burger {
-  display: none;
-  position: relative;
-  width: 42px;
-  height: 42px;
-  border: 1px solid var(--text-primary);
-  border-radius: 50%;
-}
-
-.burger-line {
-  display: block;  /*span строчный элемент накидываем ему блок, чтобы корректно стилизовать */
-  position: absolute;
-  width: 50%;
-  height: 2px;
-  background-color: var(--text-primary);
-  left: 0;
-}
-
-.first-line {
-  top: 15px;
-  left: 10px;
-}
-
-.second-line {
-  bottom: 15px;
-  left: 10px;
 }
 
 /*media area*/
@@ -194,7 +162,22 @@ header {
 
 @media screen and (max-width: 768px) {
   .nav {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 80px;
+    left: 0;
+    padding: 150px 40px;
+    background: var(--background-page);
+    z-index: 3;
+    gap: 100px;
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.8s ease, visibility 0s linear 0.8s;
   }
 
   .nav-item {
