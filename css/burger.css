@@ -1,4 +1,3 @@
-/*бургер кнопка*/
 .burger-button {
   display: none;
   width: 44px;
@@ -30,12 +29,12 @@
 }
 
 /*/cross burger/*/
-  .burger-button.crossed-lines .first-line {
-   transform: rotate(+45deg) translate(3px, 4px);
-  }
-  .burger-button.crossed-lines .second-line {
-    transform: rotate(-45deg) translate(3px, -3px);
-  }
+.burger-button.crossed-lines .first-line {
+  transform: rotate(+45deg) translate(3px, 4px);
+}
+.burger-button.crossed-lines .second-line {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
 /*/cross burger/*/
 
 .menu-link-copy {
@@ -57,92 +56,65 @@
   }
 
   .nav-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
 
   .nav-link {
-  padding: 10px;
-  position: relative;
-}
+    padding: 10px;
+    position: relative;
+  }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  top: 52px;
-  left: 10px;
-  width: 91%;
-  height: 3px;
-  transition: all 0.5s ease;
-  background-color: var(--text-primary);
-  opacity: 0;
-}
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    top: 52px;
+    left: 10px;
+    width: 91%;
+    height: 3px;
+    transition: all 0.5s ease;
+    background-color: var(--text-primary);
+    opacity: 0;
+  }
 
-.nav-item:nth-child(1) {
-  margin-top: -48px;
-}
+  .nav-item:nth-child(1) {
+    margin-top: -48px;
+  }
 
-.burger-chore {
+  .burger-chore {
     font-weight: 600;
     font-size: 32px;
     line-height: 125%;
-}
+  }
 
-.menu-link-copy {
-  position: relative;;
-  display: inline-flex;
-  justify-content: center;
-  align-items:stretch;
-  gap: 20px;
-}
+  .menu-link-copy {
+      position: relative;;
+      display: inline-flex;
+      justify-content: center;
+      align-items:stretch;
+      gap: 20px;
+    }
 
-.menu-link-copy svg {
-   flex-shrink: 0;
-}
+  .menu-link-copy svg {
+    flex-shrink: 0;
+  }
 
-.menu-link-copy::after {
-  content: '';
-  position: absolute;
-  width: 23%;
-  height: 3px;
-  bottom: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: transparent;
-  transition: background-color 0.5s ease;
-}
-
-.menu-link-copy:hover::after {
-  background-color: var(--text-primary);
-}
-
-}
-
-
-
-
-/* //////burger menu specifics//////*/
-
-
-  /* .nav-list {
+  .menu-link-copy::after {
+    content: '';
     position: absolute;
-    top: 50%;
+    width: 23%;
+    height: 3px;
+    bottom: -6px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
+    transform: translateX(-50%);
+    background-color: transparent;
+    transition: background-color 0.5s ease;
   }
-  .nav-item {
-    text-align: center;
+
+  .menu-link-copy:hover::after {
+    background-color: var(--text-primary);
   }
-  .nav-link {
-    font-size: 24px;
-    line-height: 152%;
-    letter-spacing: 0.16em;
-  } */
-
-
-
-   /* //////burger menu specifics//////*/
+}

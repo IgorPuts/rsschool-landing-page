@@ -64,12 +64,12 @@ buttonBack.addEventListener('click', () => {
 
 
 sliderInner.addEventListener('transitionend', () => {
-  // Если дошли до клона первого (последний элемент)
+
   if (count >= carts.length - 1) {
     count = 1;
     rollSlider(false);
   }
-  // Если дошли до клона последнего (первый элемент)
+
   if (count <= 0) {
     count = realCount;
     rollSlider(false);
@@ -79,7 +79,7 @@ sliderInner.addEventListener('transitionend', () => {
 
 sliderLines.forEach((line, i) => {
   line.addEventListener('click', () => {
-    count = i + 1; // +1, потому что 0 — клон
+    count = i + 1;
     rollSlider();
     activeLine();
   });

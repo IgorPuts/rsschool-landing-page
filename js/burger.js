@@ -1,10 +1,10 @@
 //gamburgerMenu//
 
   (function openCloseBurger () {
-    const burgerButton = document.querySelector('.burger-button');//кнопка для открытия/закрытия меню
-    const navMenu = document.querySelector('.nav');//получаем блок меню чтобы добавить/удалить ему класс
-    const menuLink = document.querySelector('.menu-link-copy');//кнопка менюлинк
-    const navItem = document.querySelectorAll('.nav-item');//получаем все заголовки меню бургера
+    const burgerButton = document.querySelector('.burger-button');
+    const navMenu = document.querySelector('.nav');
+    const menuLink = document.querySelector('.menu-link-copy');
+    const navItem = document.querySelectorAll('.nav-item');
 
       if (!navMenu.classList.contains('opened-burger-menu')) {//открыть
         navMenu.classList.add('opened-burger-menu');
@@ -63,6 +63,3 @@
     });
 
   })();
-
-
-
