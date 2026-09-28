@@ -42,9 +42,11 @@
 /*header button switch theme end*/
 
 /*modal*/
+  --modal-bg-color-active: var(--background-container);
   --modal-border-color: #665f55;
   --modal-background-color: #e1d4c9;
-  --modal-active-text: #e1d4c9;
+  --modal-close-btn-text-hover: var(--text-inverse);
+  --modal-close-btn-bg-hover: var(--background-container);
 }
 
 .darkstyle {
@@ -73,4 +75,7 @@
   --modal-border-color: #665f55;
   --modal-background-color: #403f3d;
   --modal-active-bg: #292826;
+  --modal-bg-color-active: var(--dark-bg-modal-control);
+  --modal-close-btn-text-hover: var(--text-inverse);
+  --modal-close-btn-bg-hover: var(--modal-bg-color-active);
 }

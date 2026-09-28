@@ -102,8 +102,8 @@ line-height: 125%;
 }
 
 .modal-tab.modal-active-tab {
-  background: var(--background-page);
-  color: var(--text-primary);
+  background: var(--modal-bg-color-active);
+  color: var(--text-inverse);
 }
 
 .modal-tab.modal-active-tab span:first-child {
@@ -112,8 +112,8 @@ line-height: 125%;
 }
 
 .modal-tab:hover {
-  background: var(--modal-active-bg);
-  color: var(--text-primary);
+  background: var(--modal-bg-color-active);
+  color: var(--text-inverse);
 }
 
 .modal-tab:hover span:first-child {
@@ -168,6 +168,6 @@ line-height: 125%;
 }
 
 .modal-close-btn:hover {
-  background: var(--modal-active-bg);
-  color: var(--modal-active-text);
+  background: var(--modal-close-btn-bg-hover);
+  color: var(--modal-close-btn-text-hover);
 }
