@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     clickedTab.forEach((item,i) => {
       const newCart = `
-        <div class="cart__preview" style="animation-delay: ${Math.min(i * 0.2, 0.5)}s">
+        <div class="cart__preview" data-id="${item.name}" style="animation-delay: ${Math.min(i * 0.2, 0.5)}s">
           <div class="cart__img">
-            <img src="./assets/img/${item.category}-${i+1}.png">
+            <img src="./assets/img/${item.category}-${i+1}.png" alt="${item.name}">
           </div>
           <div class="cart__title">
             <div class="cart-description">
