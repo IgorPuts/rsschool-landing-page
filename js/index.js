@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLink.addEventListener('click', (e)=> {
       e.preventDefault();
     });
-  } else if (currentPath && currentPath !== "/menu.html") {
+  }
+
+  if (currentPath && currentPath === "/index.html") {
     menuLink.classList.remove('underline');
     toMain.style.cursor = "default";
     toMain.addEventListener('click', (e)=> {
