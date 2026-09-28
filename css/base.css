@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: 'inter-regular', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
