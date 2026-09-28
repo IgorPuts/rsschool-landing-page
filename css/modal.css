@@ -120,6 +120,7 @@ line-height: 125%;
   background: var(--modal-background-color);
   color: var(--text-primary);
 }
+
 .modal__content-additives {
   display: flex;
   flex-direction: column;
@@ -158,7 +159,7 @@ line-height: 125%;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 78px;
+  padding: 10px;
   border-radius: 30px;
   border: 1px solid var(--modal-border-color);
   background-color: transparent;
@@ -170,4 +171,29 @@ line-height: 125%;
 .modal-close-btn:hover {
   background: var(--modal-close-btn-bg-hover);
   color: var(--modal-close-btn-text-hover);
+}
+
+@media screen and (max-width: 900px) {
+  .modal__window {
+  min-width: 680px;
+}
+.modal-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 552px) {
+  .modal__window {
+  min-width: 342px;
+}
+.modal__img {
+  min-height: 310px;
+  min-width: 310px;
+  overflow: hidden;
+  display: none;
+}
 }
